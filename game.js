@@ -42,7 +42,7 @@ class Game {
 
     this.loadGrid();
     //  create the canvas
-
+    this.loadNumberField();
 
     //  add levels to levels array
     this.levels = [];
@@ -154,7 +154,14 @@ class Game {
 
 
   }// ++++++++++++++++++++++++++++++++++++++++++++++  End LoadGrid
+ loadNumberField(){
+   for(let c = 0; c < this.cols; c++){     // columns of rows
+     for(let r = 0; r < this.rows; r++){
+          this.grid[c][r].value = 5000;;
+          }
+     }
 
+ }
 
 
 
